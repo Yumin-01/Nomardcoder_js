@@ -200,8 +200,10 @@ if(isNaN(age3)){
 } else if(age3 < 18){ 
     //condition == false
     console.log("You are too young.");
-}else {
+}else if(age3 > 50 && age3 <= 80){
     console.log("You can drink");
+}else if(age3 === 100){
+    console.log("Wow you are wise");
 }
+//operator other && || 
 
-//other && || 
