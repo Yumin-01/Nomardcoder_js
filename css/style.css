@@ -13,6 +13,14 @@ h1 {
 .sexy-font {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } */
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 input {
     border:none;
     border-bottom: 1.5px solid #ededed;
@@ -66,4 +74,17 @@ body {
 
 @keyframes fade-in {
    from {opacity: 0;} to {opacity: 1;}
+}
+
+/* 시계 */
+.clock-style {
+    padding: 5px 10px;
+    background-color: rgba( 0, 0, 0, 0.4 );
+    border-radius: 50px;
+    color: #fff;
+    font-family: 'S-CoreDream-3Light';
+    font-size: 18px;
+    margin: 0 0;
+    top: 20px;
+    position: absolute;
 }
