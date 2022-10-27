@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: beige;
 }
 
@@ -12,4 +12,58 @@ h1 {
 
 .sexy-font {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+input {
+    border:none;
+    border-bottom: 1.5px solid #ededed;
+}
+input:focus {
+    outline: none;
+}
+input.placeholder {
+    text-align: center;
+}
+button {
+    all: unset;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover {
+    color: rgb(123, 226, 178);
+}
+
+.hidden {
+    display: none !important;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0;
+    flex-direction: column;
+}
+
+.formDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formDetail label {
+    padding: 10px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fade-in {
+    animation: fade-in 2s;
+}
+.fade-out {
+    animation: fade-out 0.5s;
+}
+
+@keyframes fade-in {
+   from {opacity: 0;} to {opacity: 1;}
 }
