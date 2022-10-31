@@ -8,10 +8,11 @@
     <title>Momentum App</title>
   </head>
   <body>
+    <h1 class="lang" id="lang-btn"></h1>
     <form id="login-form" class="hidden formDetail fade-in">
       <label>What is your name?</label>
       <div>
-        <input class="placeholder" required maxlength="15" type="text" placeholder="Please write your name." />
+        <input id="input-name" class="placeholder" required maxlength="15" type="text" placeholder="Please write your name." />
         <!--
           required
           maxlength=""
@@ -19,11 +20,32 @@
         <button>Login</button>
       </div>
     </form>
-    <h1 id="greeting" class="hidden fade-in"></h1>
+    <h1 class="greet" id="greeting" class="hidden"></h1>
     <!--clock-->
-    <h2 class="clock-style" id="clock"></h2>
+    <div class="clockWrap">
+      <span class="circle outer-clock"></span>
+      <h2 class="clock-style" id="clock"></h2>
+    </div>
+
+    <!-- <div id="todo-Wrap" class="todo-wrap"> -->
+    <form id="todo-form" class="fade-in"> 
+      <input type="text" placeholder="Write a To-Do and Enter.">
+    </form>
+    
+    <ul id="todo-list" class="todo-style">
+    </ul>  
+    <!-- </div> -->
+
+    <div id="quote" class="quotes">
+      <span class=" fadeInUp-1"></span>
+      <span class=" fadeInUp-2"></span>
+    </div>
     <!-- <a href="https://nomadcoders.co/">Go to courses</a> -->
+    <script src="./js/languege.js"></script>
+    <script src="./js/quotes.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/clock.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/todo.js"></script>
   </body>
 </html>

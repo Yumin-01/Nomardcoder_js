@@ -6,7 +6,7 @@ const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form div input");
 const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME ="hidden"
-const USERNMAE_KEY = "username";
+const USERNAME_KEY = "username";
 // const link = document.querySelector("a");
 // function loginBtnClick(event){
     // const username = loginInput.value;
@@ -25,7 +25,7 @@ function loginSubmit(event) {
     event.preventDefault(); // 해당 이벤트에 대한 사용자 에이전트의 기본 동작을 실행하지 않도록 지정
     loginForm.classList.add("hidden");
     const username = loginInput.value;
-    localStorage.setItem(USERNMAE_KEY, username);
+    localStorage.setItem(USERNAME_KEY, username);
     // greeting.innerText="hello " + username + "!";
     // greeting.innerText=`Hello ${username}!`; //~물결표시 > `백틱표시 사용
     // greeting.classList.remove(HIDDEN_CLASSNAME);
@@ -47,8 +47,8 @@ function paintGreetings(username){
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-const savedUsername = localStorage.getItem(USERNMAE_KEY);
-if(savedUsername === null){
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+if(savedUsername == null){
     loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.addEventListener("submit", loginSubmit);
 }else {
